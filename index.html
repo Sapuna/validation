@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Detail Entry</title>
+</head>
+<body>
+    <div class="container1">
+        <h3>Student Detail Entry</h3>
+        <form class="form" method="get" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="on">
+
+            <div class="ROW">
+                <div class="column1">
+                    <label>Student ID:</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="id" name="stdid" placeholder="SOC(8 digit ID)" autocomplete="off">
+                    <small></small>
+                </div>
+            </div>
+
+            <div class="ROW">
+                <div class="column1">
+                    <label>Student Name*:</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="name" name="stdname" placeholder="STUDENT NAME" autocomplete="off"><br>
+                    <small></small>
+                </div>
+            </div>
+            
+            <br>
+            <div class="row form-action-buttons">
+                <input type="submit" value="ADD">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
